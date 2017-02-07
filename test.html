@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <!-- // this is a comment and this /*   */ is for multiline comments  --> 
+    <title>Basic JS & Math Operators</title>
+  </head>
+  <body>
+    <!-- 
+    Boolean()
+    Number()
+    String()
+
+     Characters used in variable names:
+      Letters A..Z, a..z
+      $ sign,
+      _ underscore.
+      number can be used but not as first character, e.g. String93 but not 93String-->
+    <span style='font-family: monospace'>
+      <script>
+        document.write('3 + 11 results in ' + (3+11) + '<br>')
+        document.write('4 + 12 equals: ' + (4+12) + '<br>')
+        document.write('4 % 12 equals: ' + (4%12) + '<br>')
+        document.write('21 % 8 equals: ' + (21%8) + '<br>')
+        a = 5; document.write('if a=5, ++a equals: ' + (++a) + '<br>')
+        a = 15; document.write('if a=15, --a equals: ' + (--a) + '<br>')
+      </script>
+      <script>
+        Time = 12
+        document.write('<br>The time is:' + ++Time)
+        if (Time < 12) document.write('AM')
+        else document.write('PM')
+      </script>
+      <script>
+        string = "The quick brown fox jumped over the lazy dog."
+        with (string) {
+          document.write("<br><br>The string's length is: " + length)
+          document.write("<br>Upper Case: " + toUpperCase())}
+      </script>
+    </span>
+  </body>
+</html>
