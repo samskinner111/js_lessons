@@ -37,5 +37,17 @@
       document.write('<br>')
       for (row in Roots) { document.write("<br>" + Roots[row]) }
     </script> 
+    <script>
+      Cats = ['Long Hair', 'Short Hair', 'Tabby', 'Siamese', "Kush-type"]
+      len = Cats.length
+      document.write("<br> The length is: " + len + "<br>")
+      Cats.push('Persian')
+      for (i in Cats) document.write(Cats[i] + '<br>')
+      document.write("<br> The last element is: " + Cats[len])
+      document.write("<br> If I pop an element (e.g., Cats.pop), it is permanently removed: <br>")
+      Cats.pop
+      for (i in Cats) document.write(Cats[i] + '<br>')
+      document.write("At least it is supposed to be!")
+    </script>
   </body>
 </html>
