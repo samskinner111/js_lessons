@@ -1,1 +1,41 @@
-array.html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Arrays in JS</title>
+  </head>
+  <body>
+    <script> // creating a Hash, two methods       
+      List = new Array()
+      List[0] = '321'; List[1]= 56; List[2] = Math.random()
+      document.write("<br><br>" + List)  
+      for (index in List) { document.write("<br>" + List[index]) }
+      SoccerTeam = 
+        { 
+          'Cathy' : 11,
+          'Hilda' : 8,
+          'Bunky' : 9
+        }
+      SoccerTeam['Andy']  = 10
+      SoccerTeam['Brian'] = 9
+      document.write("<br><br>Andy's age is: " + SoccerTeam['Andy'] + ", but Cathy's age is: " + SoccerTeam['Cathy'] + ".")
+      for (index in SoccerTeam) { document.write("<br>" + SoccerTeam[index]) }
+    </script>
+
+    <script>  // Two dimensional array
+      Row1 = [1,2,3,4,5,6,7,8,9,10]
+      Row2 = [2,4,6,8,10,12,14,16,18,20]
+      Row3 = [3,6,9,12,15,18,21,24,27,30]
+      Row4 = [4,8,12,16,20,24,28,32,36,40]
+      Row5 = [5,10,15,20,25,30,35,40,45,50]
+      MasterTable = [Row1, Row2, Row3, Row4, Row5]
+
+      alert('The value at location Row 3, #7 is: ' + MasterTable[2][6] + 'and at Row 5, #5 is: ' + MasterTable[4][4])
+    </script> 
+    <script>
+      Nums = [99, 16, 81, 66.5, 64, 23]
+      Roots = Nums.map(Math.sqrt)
+      document.write('<br>')
+      for (row in Roots) { document.write("<br>" + Roots[row]) }
+    </script> 
+  </body>
+</html>
