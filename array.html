@@ -49,5 +49,38 @@
       for (i in Cats) document.write(Cats[i] + '<br>')
       document.write("At least it is supposed to be!")
     </script>
+    <br>
+    <script>
+      Cats = ['Long Hair', 'Short Hair', 'Tabby', 'Siamese', "Kush-type"]
+      Stac = Cats.sort().reverse()  //js permanently changes the array!
+      document.write(Stac)
+      document.write(Cats)
+    </script>
+    <br><br>
+    <script>
+      values = [1, 2, 3, 4, 5]
+      values.forEach(add5)  // appears to automatically pass in both value and index
+      function add5(v) { document.write((v + 5) + ", ")}
+      document.write(Cats)  // Values live across scripts, and again, the Cat array was changed.
+    </script>
+    <br>
+    <script>
+      Numbers = [7, 62, 3, 99, 74, 11, 16, 1]
+      Numbers.sort(function(a,b) {return b-a})
+      document.write(Numbers + ", ")
+    </script>
+    <br>
+    <script>
+      Cats = ['Long Hair', 'Short Hair', 'Tabby', 'Siamese', "Kush-type", "Persian"]
+      Cats.splice(1,3)  //removes 3 elements starting at position 1.
+      for (i in Cats)
+      document.write(Cats[i] + "/ ")
+    </script><br><br>
+    <script>
+      Cats = ['Long Hair', 'Short Hair', 'Tabby', 'Siamese', "Kush-type", "Persian"]
+      Cats.splice(1,3, "Toxic", "Bland")  //removes 3 elements starting at position 1 and adds two at same position
+      for (i in Cats)
+      document.write(Cats[i] + "/ ")
+    </script>
   </body>
 </html>
