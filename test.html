@@ -1,20 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-  <!-- // this is a comment and this /*   */ is for multiline comments  --> 
     <title>Basic JS & Math Operators</title>
   </head>
   <body>
-    <!-- 
-    Boolean()
-    Number()
-    String()
-
-     Characters used in variable names:
-      Letters A..Z, a..z
-      $ sign,
-      _ underscore.
-      number can be used but not as first character, e.g. String93 but not 93String-->
     <span style='font-family: monospace'>
       <script>
         document.write('3 + 11 results in ' + (3+11) + '<br>')
@@ -24,17 +13,26 @@
         a = 5; document.write('if a=5, ++a equals: ' + (++a) + '<br>')
         a = 15; document.write('if a=15, --a equals: ' + (--a) + '<br>')
       </script>
-      <script>
+      <script>  // use of increment method
         Time = 12
         document.write('<br>The time is:' + ++Time)
         if (Time < 12) document.write('AM')
         else document.write('PM')
       </script>
-      <script>
+      <script>  // use of 'with' statement
         string = "The quick brown fox jumped over the lazy dog."
         with (string) {
           document.write("<br><br>The string's length is: " + length)
           document.write("<br>Upper Case: " + toUpperCase())}
+      </script>
+      <script>  // working with Arrays
+        List = new Array()
+        List[0] = '321'; List[1]= 56; List[2] = Math.random()
+        document.write("<br><br>" + List)
+        my_index = 2
+        alert(List[my_index])
+        Mix = new Array(124, "Hello World", Math.sqrt(81))
+        document.write("<br><br>" + '<h2>The Mix array contains: </h2>' + '<h1>'+Mix+'</h1>')
       </script>
     </span>
   </body>
